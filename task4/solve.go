@@ -44,5 +44,13 @@ func DifferentWordsCount(s string) (r int) {
 			}
 		}
 	}
+	if l != 0 {
+		if c[word] == 0 {
+			c[word] += 1
+			number = number + 1
+		}
+		word = ""
+		l = 0
+	}
 	return number
 }
